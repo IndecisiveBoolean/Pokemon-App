@@ -1,0 +1,8 @@
+-- CREATE FILE NAMED "connect_info.py"
+-- add these variables
+
+-- hostname = 'localhost or url to db'
+-- database = 'db name'
+-- username = 'db username'
+-- pwd = 'password'
+-- port_id = 'port, if Postgres likely 5432'
