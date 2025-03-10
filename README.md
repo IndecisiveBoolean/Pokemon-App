@@ -4,7 +4,7 @@
 
 **A:** A simple app I'm toying with to practice Python and Postgres with some simple datamanagement.
 
-**Q:** What I used.
+**Q:** What is it built with?
 
 * [Python]
 * [PostGres]

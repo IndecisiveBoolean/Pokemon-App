@@ -20,9 +20,16 @@ def getPokeList (userResp):
             curs = conn.cursor()
 
             curs.execute('SELECT * FROM pokemonBuild')
-            return(curs.fetchall())
-
+            totalPokes = curs.fetchall()
             
+            
+            currentNum = 1
+            
+            for x in totalPokes:
+
+                print(f"{currentNum}: {x}")
+                currentNum += 1
+                            
         except Exception as error:
             print(error)
         finally:
@@ -33,6 +40,7 @@ def getPokeList (userResp):
     elif userResp == 0:
         return("Alright, closing program...goodbye Space Cowboy")
     elif userResp == 2:
+        # MOVE THIS TO IT'S OWN FILE
         print("Let's add a new Pokemon, first I'll need the following information from you")
         
         getName = input("What is your Pokemon's name?")
