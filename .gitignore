@@ -1,5 +1,4 @@
 poke_db/connect_info.py
 .DS_Store
-poke_db/__pycache__/server_delete.cpython-313.pyc
-poke_db/__pycache__/server_query.cpython-313.pyc
+**/__pycache__/
 
