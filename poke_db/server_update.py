@@ -15,19 +15,17 @@ def updatePokeList (name, role, attack, defend, health, energy, level):
             port = connect_info.port_id
         )
 
-        # print(conn)
         curs = conn.cursor()
         
         insert_script = 'INSERT INTO pokemonBuild (name, role, attack, defense, health, energy, level) VALUES (%s, %s, %s, %s, %s, %s, %s)'
         insert_values = (name, role, attack, defend, health, energy, level)
 
         curs.execute(insert_script, insert_values)
-        
         conn.commit()
         
-        time.sleep(5)
+        time.sleep(1)
         
-        return(curs.fetchall())
+        print("POKEMON ADDED!") # need to add check to actually VERIFY IF ADDED
         
     except Exception as error:
         print(error)
